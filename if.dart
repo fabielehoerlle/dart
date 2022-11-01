@@ -2,7 +2,7 @@ main() {
   idadeComIf(69);
 }
 
-idadeComIf(int idade) {
+void idadeComIf(int idade) {
   if (idade < 11) {
     print("Com $idade Anos Você é Criança");
   } else if (idade < 17) {
