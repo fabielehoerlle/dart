@@ -1,6 +1,11 @@
 class Garrafa {
-  int quantidadeDeAgua = 0;
-  int quantidadeMaxima = 0;
+  int quantidadeDeAgua;
+  int quantidadeMaxima;
+
+  Garrafa({
+    required this.quantidadeMaxima,
+    required this.quantidadeDeAgua,
+  });
 
   bool estaCheia() {
     double metadeDaGarrafa = this.quantidadeMaxima / 2;
@@ -13,9 +18,10 @@ class Garrafa {
 }
 
 void main() {
-  Garrafa garrafaRosa = Garrafa();
-  garrafaRosa.quantidadeMaxima = 1000;
-  garrafaRosa.quantidadeDeAgua = 499;
+  Garrafa garrafaRosa = Garrafa(
+    quantidadeMaxima: 1000,
+    quantidadeDeAgua: 499,
+  );
 
   bool estaCheia = garrafaRosa.estaCheia();
   print(estaCheia);
