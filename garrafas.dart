@@ -1,6 +1,6 @@
 class Garrafa {
   int quantidadeDeAgua;
-  int quantidadeMaxima;
+  final int quantidadeMaxima;
 
   Garrafa({
     required this.quantidadeMaxima,
