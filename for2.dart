@@ -5,7 +5,8 @@ main() {
   print("A quantidade de produtos é $quantidadeProdutos");
 
   for (int index = 0; index < quantidadeProdutos; index++) {
-    String nomeProduto = boxCollectionProducts[index].name;
-    print("Produto $index: $nomeProduto");
+    ProductData produto = boxCollectionProducts[index];
+    String nomeProduto = produto.name;
+    print("Produto $index: $nomeProduto ${produto.formatPrice()}");
   }
 }
