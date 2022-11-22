@@ -174,10 +174,12 @@ List<ProductData> romanticProducts = [
     image: "assets/18.png",
     name: "Box Amo Você",
     price: 233.00,
+    enabled: false,
   ),
   ProductData(
     image: "assets/10.png",
     name: "Rustic Chic",
     price: 220.00,
+    enabled: false,
   ),
 ];
